@@ -41,8 +41,7 @@ public class Main {
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver.manage().window().maximize();
             System.out.println("Navigating to Dashboard...");
-            driver.findElement(By.xpath("//ul[@id=\'slide-out\']/li[2]/a")).click();                                 //clicking on dashboard of html page
-
+            driver.findElement(By.xpath("//ul[@id=\'slide-out\']/li/a[@class=\'dashboard-view\']")).click();   //clicking on dashboard of html page
             System.out.println("Getting snapshot of Report sections...");
 			takeSnapShot(driver, destinationPath + "\\categoryimage.png");
 		
