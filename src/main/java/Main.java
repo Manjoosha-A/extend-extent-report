@@ -68,6 +68,7 @@ public class Main {
             e.printStackTrace();
         }finally{
             driver.close();
+	    driver.quit();
         }
     }
 
